@@ -2,11 +2,9 @@ import { useState } from "react";
 import {
   Container,
   Swapper,
-  ImgMoved,
   ImgStatic,
   DivImage,
   IconBtn360,
-  IconBtnClose,
   SwapperDetail,
   Code,
   Title,
@@ -20,20 +18,25 @@ import moved from "../../assets/360.svg";
 import closed from "../../assets/closed.svg";
 
 function Home() {
+  const [imagem, setImagem] = useState(img2);
+  const [icon, setIcon] = useState(moved);
+
+  function ToggleImage() {
+    imagem === img1 ? setImagem(img2) : setImagem(img1);
+    icon === moved ? setIcon(closed) : setIcon(moved);
+  }
 
   return (
     <Container>
+      
       <Swapper>
         <DivImage>
-          <ImgStatic src={img1}  />
-          <ImgMoved src={img2} />
-          <IconBtn360>
-            <img src={moved} />
+          <ImgStatic src={imagem} />
+          <IconBtn360 onClick={() => ToggleImage()}>
+            <img src={icon} />
           </IconBtn360>
-          <IconBtnClose>
-            <img src={closed} />
-          </IconBtnClose>
         </DivImage>
+
         <SwapperDetail>
           <Code>CÓDIGO: 420204</Code>
           <Title>Sofá Margot II - Rosé</Title>
@@ -41,6 +44,7 @@ function Home() {
           <BtnAdd>Adicionar à cesta</BtnAdd>
         </SwapperDetail>
       </Swapper>
+
     </Container>
   );
 }

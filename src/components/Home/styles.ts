@@ -13,12 +13,17 @@ export const Swapper = styled.div`
   /* background-color:#fff; */
   display: flex;
   align-items: center;
+  @media (max-width: 770px) {
+    display: flex;
+    flex-direction:column;
+  }
 `;
 
 export const DivImage = styled.div`
   width: 450px;
   height: 223px;
   position: relative;
+
 `;
 export const ImgStatic = styled.img`
   width: 100%;
