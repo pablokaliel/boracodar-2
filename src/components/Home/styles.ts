@@ -23,6 +23,10 @@ export const DivImage = styled.div`
   width: 450px;
   height: 223px;
   position: relative;
+  @media (max-width: 770px) {
+    width: 100%;
+    height: 100%;
+  }
 
 `;
 export const ImgStatic = styled.img`
@@ -43,6 +47,9 @@ export const IconBtn360 = styled.button`
   border: none;
   background-color: transparent;
   cursor: pointer;
+  @media (max-width: 770px) {
+    margin-right:12px;
+  }
 `;
 export const IconBtnClose = styled.button`
   position: absolute;
@@ -56,6 +63,9 @@ export const IconBtnClose = styled.button`
 
 export const SwapperDetail = styled.div`
   margin-left: 63px;
+  @media (max-width: 770px) {
+    margin-top:63px;
+  }
 `;
 export const Code = styled.p`
   font-size: 10px;
