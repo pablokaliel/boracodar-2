@@ -14,7 +14,7 @@
       <td>02</td>
       <td>Card de um Produto</td>
       <td>19/01/23</td>
-      <td><a href="boracodar-02.vercel.app">🔗</a></td>
+      <td><a href="https://boracodar-2.vercel.app/">🔗</a></td>
     </tr>
   </tbody>
 </table>
