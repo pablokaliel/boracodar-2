@@ -31,9 +31,9 @@ function Home() {
       
       <Swapper>
         <DivImage>
-          <ImgStatic src={imagem} />
+          <ImgStatic src={imagem} alt="static"/>
           <IconBtn360 onClick={() => ToggleImage()}>
-            <img src={icon} />
+            <img src={icon} alt="360"/>
           </IconBtn360>
         </DivImage>
 
